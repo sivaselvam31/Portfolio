@@ -1,5 +1,4 @@
 import ParticlesContainer from "./Particle";
-import homeBg from "../assets/home-bg.jpg";
 import Type from "./Type";
 
 const Hero = () => {
@@ -7,14 +6,6 @@ const Hero = () => {
     <div className="relative w-full h-screen overflow-hidden">
       {/* Particles Background */}
       <ParticlesContainer />
-
-      {/* Background Image */}
-      <div
-        className="absolute inset-0 bg-cover z-0 opacity-10"
-        style={{
-          backgroundImage: `url(${homeBg})`,
-        }}
-      ></div>
 
       {/* Hero Page Content */}
       <div className="absolute container mx-auto h-[90%] inset-0 flex flex-col md:flex-row md:justify-between z-10 pb-10 px-5 md:px-10">
