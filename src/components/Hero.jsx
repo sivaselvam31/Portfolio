@@ -8,7 +8,7 @@ const Hero = () => {
       <ParticlesContainer />
 
       {/* Hero Page Content */}
-      <div className="absolute container mx-auto h-[90%] inset-0 flex flex-col md:flex-row md:justify-between z-10 pb-10 px-5 md:px-10">
+      <div className="absolute top-16 container mx-auto h-[90%] inset-0 flex flex-col md:flex-row md:justify-between z-10 md:pb-10 px-5 md:px-10">
         {/* Image Section */}
         <div className="w-full mt-14 md:w-1/2 flex items-center justify-center order-1 md:order-2 mb-10 md:mb-0">
           <img
