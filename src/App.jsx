@@ -2,6 +2,7 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
 import homeBg from "./assets/home-bg.jpg";
+import Skills from "./components/Skills";
 
 function App() {
   return (
@@ -12,10 +13,12 @@ function App() {
         style={{
           backgroundImage: `url(${homeBg})`,
         }}
-      ></div>
+      >
+      </div>
       <Navbar />
       <Hero />
       <About />
+      <Skills />
     </>
   );
 }
