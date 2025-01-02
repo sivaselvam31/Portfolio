@@ -14,19 +14,19 @@ const Hero = () => {
           <img
             src="#"
             alt="BannerImg"
-            className="border rounded-full w-48 h-48 md:w-96 md:h-96"
+            className="border rounded-full w-48 h-48 lg:w-80 lg:h-80"
           />
         </div>
 
         {/* Text Section */}
-        <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start order-2 md:order-1 md:mt-10 md:ml-16">
-          <h1 className="text-3xl md:text-6xl text-white text-center md:text-left">
+        <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start order-2 md:order-1 md:mt-16 md:ml-16 lg:mt-16 lg:space-y-9">
+          <h1 className="text-3xl md:text-4xl text-center md:text-left lg:text-5xl">
             Hi There...!
           </h1>
-          <h1 className="text-3xl md:text-6xl text-white my-5 text-center md:text-left">
-            I'M <span className="text-3xl md:text-6xl text-purple-600">Sivaselvam</span>
+          <h1 className="text-3xl md:text-4xl my-5 text-center md:text-left lg:text-6xl">
+            I'M <span className="text-3xl md:text-5xl text-purple-600 lg:text-5xl">Sivaselvam</span>
           </h1>
-          <div className="text-2xl md:text-5xl text-purple-600 md:mt-10">
+          <div className="text-2xl md:text-3xl text-purple-600 md:mt-10 lg:text-5xl">
             <Type />
           </div>
         </div>
