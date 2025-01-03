@@ -7,6 +7,9 @@ const Skills = () => {
         <h1>
           Professional <span className="text-purple-600">Skillset</span>
         </h1>
+        <div>
+
+        </div>
       </div>
     </section>
   );

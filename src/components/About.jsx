@@ -44,7 +44,7 @@ const About = () => {
         <p className="lg:text-2xl">
           Feel free to <span className="text-purple-600">Connect </span>with me
         </p>
-        <ul className="flex flex-row justify-center gap-6 my-6">
+        <ul className="flex flex-row justify-center gap-6 mt-6 mb-10">
           {Find_Me_Icons.map((icon) => (
             <li
               key={icon.id}
