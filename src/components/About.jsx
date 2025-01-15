@@ -4,7 +4,7 @@ import { Find_Me_Icons } from "../constants/const";
 const About = () => {
   return (
     <section className="relative w-full z-10 my-10">
-      <h1 className="text-4xl text-center mb-8 lg:text-6xl lg:mb-10">
+      <h1 className="text-4xl text-center mb-8 lg:text-6xl lg:mb-10 font-bold">
         Let Me <br className="md:hidden" />{" "}
         <span className="text-purple-600">Indroduce</span>
         <br className="md:hidden" /> MySelf

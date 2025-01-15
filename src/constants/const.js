@@ -146,3 +146,48 @@ export const Tools = [
     icon: React.createElement(SiTailwindcss, { size: 60 }),
   },
 ];
+
+export const projects = [
+  {
+    id: 1,
+    name: "Project 1",
+    description:
+      "This is a project description lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+    image: "#",
+    github: "#",
+    demo: "#",
+  },
+  {
+    id: 2,
+    name: "Project 2",
+    description:
+      "Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages.",
+    image: "#",
+    github: "#",
+    demo: "#",
+  },
+  {
+    id: 3,
+    name: "Project 3",
+    description: "This is a project description",
+    image: "#",
+    github: "#",
+    demo: "#",
+  },
+  {
+    id: 4,
+    name: "Project 4",
+    description: "This is a project description",
+    image: "#",
+    github: "#",
+    demo: "#",
+  },
+  {
+    id: 5,
+    name: "Project 5",
+    description: "This is a project description",
+    image: "#",
+    github: "#",
+    demo: "#",
+  },
+];
