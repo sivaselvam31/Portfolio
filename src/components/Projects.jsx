@@ -34,7 +34,7 @@ const Projects = () => {
               {/* Project Name and Description */}
               <div className="text-center">
                 <h1 className="text-xl font-semibold mt-2">{project.name}</h1>
-                <p className="text-sm font-semibold mt-2 text-justify indent-2">
+                <p className="mt-2 text-justify indent-2">
                   {project.description}
                 </p>
               </div>
@@ -49,6 +49,7 @@ const Projects = () => {
                     <FaGithub className="text-white w-6 h-6" /> Github
                   </button>
                 </a>
+
                 <a
                   href={project.demo}
                   target="_blank"
@@ -63,6 +64,12 @@ const Projects = () => {
           </div>
         ))}
       </div>
+
+      {/* Horizondol Line */}
+      <div className="flex justify-center mt-20">
+        <hr className="border-gray-700 w-[90%]" />
+      </div>
+      
     </section>
   );
 };

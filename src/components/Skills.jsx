@@ -81,6 +81,7 @@ const Skills = () => {
     //     <div class="p-4 bg-red-500">Item 3</div>
     //   </div>
     // </>
+    
   );
 };
 
