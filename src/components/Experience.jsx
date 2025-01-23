@@ -1,6 +1,9 @@
 import React from "react";
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
+import { Experience } from "../constants/const";
 
-const Experience = () => {
+const ExperienceSection = () => {
   return (
     <section className="relative w-full z-10 my-10">
         Experience
@@ -8,4 +11,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default  ExperienceSection;
