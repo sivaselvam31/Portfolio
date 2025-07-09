@@ -1,9 +1,10 @@
-import React from "react";
+import { Timeline } from "./ui/Timeline";
+import { experiences } from "../constants/const";
 
 const Experience = () => {
   return (
     <section className="relative w-full z-10 my-10">
-        Experience
+        <Timeline data={experiences} />
     </section>
   );
 };

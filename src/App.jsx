@@ -5,6 +5,7 @@ import homeBg from "./assets/home-bg.jpg";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Experience from "./components/Experience";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -15,17 +16,18 @@ function App() {
         style={{
           backgroundImage: `url(${homeBg})`,
         }}
-      >
-      </div>
+      ></div>
       <Navbar />
       <Hero />
       <About />
       <Skills />
       <Projects />
       <Experience />
-      
+      <Contact />
     </>
   );
 }
 
 export default App;
+
+// https://chatgpt.com/share/67bf6e2c-477c-8008-8095-9f030c2accba
