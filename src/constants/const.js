@@ -23,6 +23,8 @@ import { IoLogoJavascript } from "react-icons/io";
 import { MdHtml, MdCss } from "react-icons/md";
 import { IoLogoReact } from "react-icons/io5";
 
+
+//Nav links
 const NAV_LINKS = [
   {
     id: 1,
@@ -69,6 +71,7 @@ const NAV_LINKS = [
 ];
 export default NAV_LINKS;
 
+//Social Media Links
 export const Find_Me_Icons = [
   {
     id: 8,
@@ -91,7 +94,6 @@ export const Find_Me_Icons = [
 ];
 
 //skill Section Icons
-
 export const skills = [
   { id: 1, name: "Python", icon: React.createElement(SiPython, { size: 60 }) },
   {
@@ -131,6 +133,7 @@ export const skills = [
   // { id: 16, name: "", icon: "testing-icon.png" },
 ];
 
+// Tools Section Icons
 export const Tools = [
   { id: 1, name: "Python", icon: React.createElement(SiPython, { size: 60 }) },
   {
@@ -147,6 +150,7 @@ export const Tools = [
   },
 ];
 
+// For Project Section
 export const projects = [
   {
     id: 1,
@@ -192,6 +196,8 @@ export const projects = [
   },
 ];
 
+
+//this one for example change once have a real data
 export const experiences = [
   {
     title: "Software Developer",
@@ -225,5 +231,35 @@ export const experiences = [
       "Created a personal portfolio using Three.js, React, Vite, and WebAPI to showcase technical expertise.",
       "Continuously enhancing technical skills and expanding expertise in modern web development and back-end technologies.",
     ],
+  },
+];
+
+//
+
+//For Experience Section 
+export const Experience = [
+  {
+    id: 1,
+    title: 'Web Developer',
+    subtitle: 'Dag-Technologies',
+    date: 'Jan 2020 - Dec 2022',
+    description: [
+      'Developed and maintained company websites using React and Node.js.',
+      'Collaborated with the design team to implement responsive UI components.',
+      'Optimized website performance, reducing page load time by 30%.',
+    ],
+    icon: 'dagTech', // Use strings to identify icons (e.g., 'work', 'school', etc.)
+  },
+  {
+    id: 2,
+    title: 'Backend Engineer',
+    subtitle: 'Forage',
+    date: 'Jan 2023 - Present',
+    description: [
+      'Designed and implemented RESTful APIs using Django and Flask.',
+      'Managed database schema and ensured efficient query performance.',
+      'Implemented authentication and authorization mechanisms.',
+    ],
+    icon: 'Forage',
   },
 ];
