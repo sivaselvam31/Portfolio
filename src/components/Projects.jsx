@@ -2,6 +2,7 @@ import React from "react";
 import { projects } from "../constants/const";
 import { FaGithub } from "react-icons/fa";
 import { CgWebsite } from "react-icons/cg";
+import Button from "./shared/Button";
 
 const Projects = () => {
   return (
@@ -45,9 +46,9 @@ const Projects = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button className="mt-4 px-4 py-2 bg-purple-600 rounded-md flex flex-row gap-2">
-                    <FaGithub className="text-white w-6 h-6" /> Github
-                  </button>
+                  <Button variant="primary" className="mt-4">
+                    <FaGithub className="w-6 h-6" /> Github
+                  </Button>
                 </a>
 
                 <a
@@ -55,9 +56,9 @@ const Projects = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button className="mt-4 px-4 py-2 bg-purple-600 rounded-md flex flex-row gap-2">
-                    <CgWebsite className="text-white w-6 h-6" /> Demo
-                  </button>
+                  <Button variant="primary" className="mt-4">
+                    <CgWebsite className="w-6 h-6" /> Demo
+                  </Button>
                 </a>
               </div>
             </div>
