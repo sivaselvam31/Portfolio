@@ -3,6 +3,9 @@ import NAV_LINKS from "../constants/const";
 import { FaBars } from "react-icons/fa";
 import { FaX } from "react-icons/fa6";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
+import { FiDownload } from "react-icons/fi";
+import { BsThreeDots } from "react-icons/bs";
+import Button from "./shared/Button";
 
 const Navbar = () => {
   const [openNavigation, setOpenNavigation] = useState(false);
@@ -29,17 +32,14 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed top-0 w-full bg-black bg-opacity-70 z-50 border-b border-gray-700">
+    <div className="fixed top-2 md:top-3 left-1/2 -translate-x-1/2 w-[calc(100%-48px)] max-w-6xl bg-black/40 backdrop-blur-2xl z-50 border border-white/10 rounded-4xl shadow-[0_8px_32px_rgba(1,2,1, 0.6)]">
       <div className="flex items-center justify-between py-4 px-6 mx-auto max-w-7xl">
         {/* Logo */}
-        <div>
-          <img
-            src="#"
-            alt="Logo"
-            className="h-10 w-auto object-contain"
-          />
+        <div className="flex items-center gap-2">
+          <div className="bg-gray-600 text-white p-2 rounded-xl text-xl font-bold italic w-10 h-10 flex items-center justify-center">S</div>
+          <span className="text-white font-semibold text-lg drop-shadow-md">Sivaselvam</span>
         </div>
-
+        
         {/* Hamburger Menu for Mobile */}
         <div
           className="lg:hidden flex cursor-pointer text-white"
@@ -62,11 +62,13 @@ const Navbar = () => {
               >
                 <a
                   href={link.href}
-                  className="flex items-center space-x-2"
+                  className="flex flex-col items-center justify-center translate-y-[2px]"
                   onClick={handleClick} // Close menu on link click
                 >
-                  {link.icon}
-                  <span>{link.name}</span>
+                  <span className="pb-1 hover:text-white">{link.name}</span>
+                  {link.name === "Home" && (
+                    <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1"></span>
+                  )}
                 </a>
               </li>
             ))}
@@ -75,11 +77,11 @@ const Navbar = () => {
 
         {/* Action Buttons */}
         <div className="hidden lg:flex items-center space-x-4">
-          <button className="bg-purple-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-purple-700 transition duration-300">
-            Sign In
-          </button>
-          <button className="bg-gray-800 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-gray-700 transition duration-300">
-            GitHub
+          <Button variant="secondary" className="bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 rounded-full px-6 gap-3">
+            <FiDownload /> Download CV
+          </Button>
+          <button className="bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 text-white p-3 rounded-full flex items-center justify-center transition-colors">
+            <BsThreeDots />
           </button>
         </div>
       </div>

@@ -17,7 +17,7 @@ const Skills = () => {
             key={skill.id}
             className="flex flex-col justify-center items-center"
           >
-            <div className="border border-purple-500 py-4 px-4 rounded-md shadow-md shadow-purple-700 md:py-6 md:px-14 lg:px-[4.5rem] lg:rounded-sm">
+            <div className="border border-purple-500 py-4 px-4 rounded-md shadow-md shadow-purple-700 md:py-6 md:px-14 lg:px-18 lg:rounded-xs">
               {skill.icon}
             </div>
             <p className="mt-2 font-semibold text-center">{skill.name}</p>
@@ -39,7 +39,7 @@ const Skills = () => {
               key={Tool.id}
               className="flex flex-col justify-center items-center"
             >
-              <div className="border border-purple-500 py-4 px-4 rounded-md shadow-md shadow-purple-700 md:py-6 md:px-14 lg:px-[4.5rem] lg:rounded-sm">
+              <div className="border border-purple-500 py-4 px-4 rounded-md shadow-md shadow-purple-700 md:py-6 md:px-14 lg:px-18 lg:rounded-xs">
                 {Tool.icon}
               </div>
               <p className="mt-2 font-semibold text-center">{Tool.name}</p>

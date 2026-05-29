@@ -17,12 +17,14 @@ import {
   SiTailwindcss,
   SiDjango,
   SiMysql,
-  SiMongodb,
+  SiMongodb, 
 } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io";
 import { MdHtml, MdCss } from "react-icons/md";
 import { IoLogoReact } from "react-icons/io5";
 
+import { FaReact, FaCode } from "react-icons/fa";
+import { RiNextjsLine } from "react-icons/ri";
 
 //Nav links
 const NAV_LINKS = [
@@ -62,14 +64,43 @@ const NAV_LINKS = [
     name: "Contact",
     icon: React.createElement(AddressBook, { size: 24 }),
   },
-  {
-    id: 7,
-    href: "#resume",
-    name: "Resume",
-    icon: React.createElement(FileText, { size: 24 }),
-  },
+  // {
+  //   id: 7,
+  //   href: "#resume",
+  //   name: "Resume",
+  //   icon: React.createElement(FileText, { size: 24 }),
+  // },
 ];
 export default NAV_LINKS;
+
+
+// ASTEROIDS for hero section background animation
+
+// Each asteroid has a "depth" property (0 = deep background, 1 = close foreground)
+// which drives blur, opacity, and size for a depth-of-field effect.
+export const ASTEROIDS = [
+  // Top area — medium, semi-sharp
+  { id: 1, w: 68,  top: '8%',  left: '52%', blur: 0.8, opacity: 0.55, delay: 0,   dur: 22, rotRange: 15 },
+  { id: 2, w: 48,  top: '14%', left: '38%', blur: 0.5, opacity: 0.45, delay: 1.2, dur: 18, rotRange: 20 },
+  // Right side — far background (small, sharp)
+  { id: 3, w: 38,  top: '20%', left: '88%', blur: 0.3, opacity: 0.40, delay: 0.6, dur: 26, rotRange: 12 },
+  { id: 4, w: 32,  top: '35%', left: '92%', blur: 0.3, opacity: 0.35, delay: 2,   dur: 20, rotRange: 8  },
+  // Mid left — medium
+  { id: 5, w: 52,  top: '48%', left: '6%',  blur: 1.0, opacity: 0.50, delay: 1.8, dur: 24, rotRange: 18 },
+  // Bottom center — CLOSE, big and blurry (depth-of-field foreground)
+  { id: 6, w: 180, top: '72%', left: '34%', blur: 5,   opacity: 0.80, delay: 0.4, dur: 30, rotRange: 6  },
+  { id: 7, w: 110, top: '78%', left: '60%', blur: 3.5, opacity: 0.65, delay: 1,   dur: 28, rotRange: 8  },
+  // Top-left corner — medium
+  { id: 8, w: 58,  top: '5%',  left: '12%', blur: 0.8, opacity: 0.50, delay: 2.5, dur: 21, rotRange: 14 },
+];
+
+// Tech Stack Icons
+export const TECH_ICONS = [
+  { icon: React.createElement(FaCode), color: "#a855f7", label: "HTML/CSS" },
+  { icon: React.createElement(FaReact), color: "#38bdf8", label: "React" },
+  { icon: React.createElement(RiNextjsLine), color: "#fff", label: "Next.js" },
+  { icon: React.createElement(SiTailwindcss), color: "#38bdf0", label: "Tailwind CSS" },
+];
 
 //Social Media Links
 export const Find_Me_Icons = [
@@ -196,7 +227,6 @@ export const projects = [
   },
 ];
 
-
 //this one for example change once have a real data
 export const experiences = [
   {
@@ -236,30 +266,30 @@ export const experiences = [
 
 //
 
-//For Experience Section 
+//For Experience Section
 export const Experience = [
   {
     id: 1,
-    title: 'Web Developer',
-    subtitle: 'Dag-Technologies',
-    date: 'Jan 2020 - Dec 2022',
+    title: "Web Developer",
+    subtitle: "Dag-Technologies",
+    date: "Jan 2020 - Dec 2022",
     description: [
-      'Developed and maintained company websites using React and Node.js.',
-      'Collaborated with the design team to implement responsive UI components.',
-      'Optimized website performance, reducing page load time by 30%.',
+      "Developed and maintained company websites using React and Node.js.",
+      "Collaborated with the design team to implement responsive UI components.",
+      "Optimized website performance, reducing page load time by 30%.",
     ],
-    icon: 'dagTech', // Use strings to identify icons (e.g., 'work', 'school', etc.)
+    icon: "dagTech", // Use strings to identify icons (e.g., 'work', 'school', etc.)
   },
   {
     id: 2,
-    title: 'Backend Engineer',
-    subtitle: 'Forage',
-    date: 'Jan 2023 - Present',
+    title: "Backend Engineer",
+    subtitle: "Forage",
+    date: "Jan 2023 - Present",
     description: [
-      'Designed and implemented RESTful APIs using Django and Flask.',
-      'Managed database schema and ensured efficient query performance.',
-      'Implemented authentication and authorization mechanisms.',
+      "Designed and implemented RESTful APIs using Django and Flask.",
+      "Managed database schema and ensured efficient query performance.",
+      "Implemented authentication and authorization mechanisms.",
     ],
-    icon: 'Forage',
+    icon: "Forage",
   },
 ];

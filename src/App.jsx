@@ -10,13 +10,13 @@ import Contact from "./components/Contact";
 function App() {
   return (
     <>
-      {/* Background Image */}
+      {/* Background Image
       <div
         className="absolute inset-0 bg-cover bg-repeat z-10 opacity-5"
         style={{
           backgroundImage: `url(${homeBg})`,
         }}
-      ></div>
+      ></div> */}
       <Navbar />
       <Hero />
       <About />
